@@ -15,6 +15,7 @@ body {
   color: var(--neutral-very-dark-violet);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  margin: 0;
 }
 
 ul {
@@ -72,15 +73,128 @@ nav ul li {
   padding: 20px;
 }
 
+.right-nav {
+  padding: 0;
+}
+
 .button {
   color: white;
   background-color: var(--primary-cyan);
   padding: 8px 22px;
   border-radius: 22px;
-  /* transition-duration: 0.4s; */
+  font-weight: 700;
+  transition-duration: 0.4s;
 }
 
 .button:hover {
   background-color: #9be3e2;
   color: white;
 }
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 24px 10%;
+}
+
+.title img {
+  /* transform: translateX(100px); */
+}
+
+.title h1 {
+  font-size: 80px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  color: var(--neutral-very-dark-blue);
+}
+
+.title p {
+  font-size: 22px;
+  margin-top: 0;
+  line-height: 1.6;
+  /* width: 80%; */
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+.title .button {
+  padding: 14px 34px;
+  border-radius: 28px;
+  font-size: 20px;
+}
+
+.shortener {
+  background: linear-gradient(180deg, white, white 50%, #f0f1f6 0%);
+}
+
+.shortener-form {
+  background-color: var(--primary-dark-violet);
+  background-image: url("./images/bg-shorten-desktop.svg");
+  background-repeat: round;
+  margin: 70px 10%;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.shortener-form form {
+  padding: 54px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.shortener-form .button {
+  font-size: 20px;
+  padding: 20px 4%;
+  border-style: none;
+  cursor: pointer;
+}
+
+.button-squared {
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.shortener-form-input {
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 18px 20px;
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 80%;
+  margin-right: 20px;
+}
+
+.shortener-form-input::placeholder {
+  color: var(--neutral-greyish-violet);
+}
+
+.statistics {
+  background-color: #f0f1f6;
+  margin: 0;
+  padding: 30px 10%;
+}
+
+h3 {
+  font-size: 40px;
+  color: var(--neutral-very-dark-blue);
+}
+
+.statistics-header {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.statistics-header h3 {
+  margin-bottom: 0;
+}
+
+.statistics-header p {
+  padding: 0 27%;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+/* 900px - mobile */
