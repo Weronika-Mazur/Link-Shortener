@@ -69,8 +69,13 @@ nav ul {
   padding-left: 20px;
   font-weight: 700;
 }
+
 nav ul li {
   padding: 20px;
+}
+
+header hr {
+  display: none;
 }
 
 .right-nav {
@@ -94,12 +99,14 @@ nav ul li {
 .title {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin: 24px 10%;
+  margin-right: 0;
+  overflow: hidden;
 }
 
 .title img {
-  /* transform: translateX(100px); */
+  transform: translateX(14%);
+  margin-top: 20px;
 }
 
 .title h1 {
@@ -131,7 +138,8 @@ nav ul li {
 .shortener-form {
   background-color: var(--primary-dark-violet);
   background-image: url("./images/bg-shorten-desktop.svg");
-  background-repeat: round;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   margin: 70px 10%;
   border-radius: 10px;
   margin-bottom: 0;
@@ -197,4 +205,331 @@ h3 {
   margin-top: 10px;
 }
 
-/* 900px - mobile */
+.statistics-examples {
+  display: flex;
+  gap: 2%;
+  margin-top: 110px;
+  margin-bottom: 140px;
+  /* background-image: linear-gradient(var(--primary-cyan), var(--primary-cyan)); */
+  background-image: linear-gradient(
+    0deg,
+    var(--primary-cyan),
+    var(--primary-cyan) 50%,
+    #f0f1f6 0%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 18px;
+  background-position: 0 center;
+}
+
+.card {
+  background-color: white;
+  flex: 1 1 0px;
+}
+
+.card:nth-of-type(1) {
+  transform: translateY(-40px);
+}
+
+.card:nth-of-type(3) {
+  transform: translateY(40px);
+}
+
+.card-img {
+  background-color: var(--primary-dark-violet);
+  border-radius: 100%;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  margin-top: 0;
+}
+
+.card-header {
+  margin-top: 0;
+  background: linear-gradient(180deg, #f0f1f6, #f0f1f6 50%, white 0%);
+}
+
+.card-content {
+  margin: 34px;
+}
+
+.card-content h6 {
+  font-size: 22px;
+  color: var(--neutral-very-dark-blue);
+  margin: 0;
+}
+
+.card-content p {
+  font-size: 16px;
+}
+
+.banner {
+  text-align: center;
+  background-image: url("./images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  background-position: 0 center;
+  background-color: var(--primary-dark-violet);
+  padding: 20px 0 76px 0;
+}
+
+.banner h3 {
+  color: white;
+  margin: 30px;
+}
+
+.banner .button {
+  padding: 14px 34px;
+  border-radius: 28px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: var(--neutral-very-dark-violet);
+  color: white;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  gap: 2%;
+  padding: 80px 10%;
+}
+
+.footer-col {
+  margin: 0px 40px;
+}
+
+.footer-col h6 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.footer-links li {
+  padding: 0;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.footer-links {
+  padding: 0;
+}
+
+footer section {
+  display: flex;
+  margin-left: 14%;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-mobile {
+    position: absolute;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-dark-violet);
+    z-index: 2;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    border-radius: 12px;
+  }
+
+  .nav-mobile .left-nav {
+    flex-direction: column;
+    padding: 0;
+    color: white;
+  }
+
+  .nav-mobile .right-nav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .nav-mobile a {
+    color: white;
+  }
+
+  .nav-mobile hr {
+    display: block;
+    width: 80%;
+    background-color: var(--neutral-greyish-violet);
+    border: none;
+    height: 1px;
+  }
+
+  .nav-mobile .button {
+    width: 100%;
+  }
+
+  header {
+    justify-content: space-between;
+    margin: 40px 6%;
+    position: relative;
+  }
+
+  .title {
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    margin: 24px 6%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .title h1 {
+    font-size: 40px;
+    margin-bottom: 14px;
+  }
+
+  .title section {
+    margin-right: 6%;
+    margin-bottom: 24px;
+  }
+
+  .title img {
+    order: -1;
+    /* height: 160%; */
+    width: 140%;
+    transform: translateX(0%);
+    margin-top: 0;
+  }
+
+  .title p {
+    font-size: 18px;
+    width: auto;
+    line-height: 1.8;
+  }
+
+  .shortener-form form {
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .button-squared {
+    width: 100%;
+  }
+
+  .shortener-form .button {
+    padding: 12px 12px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  .shortener-form-input {
+    width: 100%;
+    margin: 0;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .shortener-form {
+    margin: 70px 6%;
+    margin-bottom: 0;
+    background-image: url("./images/bg-shorten-mobile.svg");
+  }
+
+  .statistics {
+    padding: 30px 6%;
+  }
+
+  .statistics-header h3 {
+    font-size: 26px;
+  }
+
+  .statistics-header p {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .statistics-examples {
+    flex-direction: column;
+    background-image: linear-gradient(
+      90deg,
+      var(--primary-cyan),
+      var(--primary-cyan) 100%,
+      #f0f1f6 0%
+    );
+    background-size: 10px 100%;
+    background-position: left calc(50% + 1px) center;
+    margin-bottom: 100px;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0) 50%,
+      white 0%
+    );
+  }
+
+  .card-img {
+    margin-bottom: 0;
+  }
+
+  .card {
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .card-content {
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .banner h3 {
+    font-size: 26px;
+  }
+
+  .banner {
+    background-image: url("./images/bg-boost-mobile.svg");
+    padding: 63px 0 103px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  footer section {
+    flex-direction: column;
+    align-items: center;
+    margin: 36px 0;
+  }
+
+  .footer-col {
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-col h6 {
+    margin-bottom: 20px;
+  }
+}
